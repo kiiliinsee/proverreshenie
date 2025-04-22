@@ -119,6 +119,7 @@ class MainActivity : AppCompatActivity() {
         btnFalse.isEnabled = enable
     }
 
+
     private fun updateStats() {
         val total = rightAnswers + wrongAnswers
         val percent = if (total > 0) round((rightAnswers.toDouble() / total) * 10000) / 100 else 0.0
