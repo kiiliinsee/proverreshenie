@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:importantForAccessibility="no">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/txtAllExamples"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Итого проверено примеров: 0"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtNumberRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Правильно: 0"
+                android:paddingEnd="16dp"/>
+            <TextView
+                android:id="@+id/txtNumberWrong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Неправильно: 0" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ВРЕМЯ (сек)"
+            android:textSize="18sp"
+            android:paddingTop="8dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtTimeMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Минимум: 0"
+                android:paddingEnd="16dp"/>
+            <TextView
+                android:id="@+id/txtTimeMax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Максимум: 0"
+                android:paddingEnd="16dp"/>
+            <TextView
+                android:id="@+id/txtTimeAverage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Среднее: 0.00" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtPercentageCorrectAnswers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00%"
+            android:textSize="32sp"
+            android:paddingTop="16dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp">
+            <TextView
+                android:id="@+id/txtFirstOperand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textSize="24sp"
+                android:paddingEnd="8dp"/>
+            <TextView
+                android:id="@+id/txtOperation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="24sp"
+                android:paddingEnd="8dp"/>
+            <TextView
+                android:id="@+id/txtTwoOperand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textSize="24sp"
+                android:paddingEnd="8dp"/>
+            <TextView
+                android:id="@+id/txtEqually"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="="
+                android:textSize="24sp"
+                android:paddingEnd="8dp"/>
+            <TextView
+                android:id="@+id/txtResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textSize="24sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:paddingTop="8dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp">
+
+            <Button
+                android:id="@+id/btnTrue"
+                android:text="ВЕРНО"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnFalse"
+                android:text="НЕВЕРНО"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="СТАРТ" />
+    </LinearLayout>
+</ScrollView>
