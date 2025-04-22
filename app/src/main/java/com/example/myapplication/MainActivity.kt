@@ -18,6 +18,7 @@ import com.example.myapplication.MathExample
 
 class MainActivity : AppCompatActivity() {
 
+
     private lateinit var txtFirstOperand: TextView
     private lateinit var txtTwoOperand: TextView
     private lateinit var txtOperation: TextView
