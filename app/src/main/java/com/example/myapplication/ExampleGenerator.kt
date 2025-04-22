@@ -25,16 +25,16 @@ object ExampleGenerator {
             "+" -> operand1 + operand2.toDouble()
             "-" -> operand1 - operand2.toDouble()
             "*" -> operand1 * operand2.toDouble()
-            "/" -> round((operand1 / operand2.toDouble()) * 100) / 100 // округление до 2 знаков
+            "/" -> round((operand1 / operand2.toDouble()) * 100) / 100
             else -> 0.0
         }
 
-        val isCorrect = Random.nextBoolean() // 50% вероятность правильного ответа
+        val isCorrect = Random.nextBoolean() // 50%
 
         val displayedResult = if (isCorrect) {
             correctResult
         } else {
-            // Добавим небольшую ошибку (±1–10)
+            // (±1–10)
             val error = Random.nextInt(1, 10)
             if (Random.nextBoolean()) correctResult + error else correctResult - error
         }
